@@ -1,0 +1,12 @@
+<template name="postsList">
+  <div class="posts">
+	<div class="container">
+    {{#each posts}}
+		<div class="col-sm-4">
+      <a href="{{pathFor 'postItem'}}"><img src="{{imageUrl}}" class="thumbImg"></a>
+		<p>Score : {{score}}</p>
+	</div>
+{{/each}}
+	</div>
+  </div>
+</template>

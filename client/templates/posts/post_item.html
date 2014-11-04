@@ -1,0 +1,24 @@
+<template name="postItem">
+
+	<div class="postItem">
+		<div class="post-content">
+			<div class="col-sm-1">
+				<a class="navbar-brand" href="{{pathFor 'posts'}}">Back</a>
+			</div>
+			<div class="col-sm-6">
+				<img src="{{imageUrl}}" class="largeImg">
+			</div>
+			<div class="col-sm-3">
+				<h2>Score : {{score}}</h2>	
+				<h3>Work We Want : </h3> <h4>{{www}}</h4>
+				<h3>Pay We Want :</h3> <h4>{{pww}}</h4>
+				<h3>Work We Have :</h3><h4>{{wwh}}</h4>
+				<h3>Pay We Have :</h3> <h4>{{pwh}}</h4>
+			</div>
+			<div class="col-sm-2">
+				<h3>Votes left : {{votesLeft}}</h3>
+				<button class='btn btn-lg btn-primary vote'>Up Vote</button>
+			</div>
+		</div>
+</div>
+	</template>
