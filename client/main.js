@@ -1,4 +1,5 @@
 Meteor.subscribe('posts');
 Meteor.startup(function(){
-Session.set("userVotes",3);	
+Session.set("userVotes",3);
+
 });
