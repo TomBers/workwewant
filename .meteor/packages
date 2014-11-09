@@ -10,4 +10,5 @@ underscore
 iron:router
 sacha:spin
 jquery
+raix:famono
 
