@@ -1,12 +1,23 @@
 <template name="layout">
   <div class="container">
     <header class="navbar navbar-default" role="navigation">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="{{pathFor 'home'}}">WorkWeWant</a>
-      </div>
+      <div class="navbar-header" style="width:100%">
+	<div class="col-sm-6" >
+        <a id="bigHeader" class="navbar-brand" href="{{pathFor 'home'}}">THE WORK WE WANT
+ 			<small>in collaboration with <a href="#">#webwewantfest</a></small></a>
+     </div>
+<div class="col-sm-6" id="centerNav">
+
+			<a href="{{pathFor 'project'}}">Project</a>
+	       <a href="{{pathFor 'about'}}">About</a>
+	       <a href="#">Follow</a>
+	
+	</div>
+	 </div>
     </header>
     <div id="main" class="row-fluid">
       {{> yield}}
     </div>
+	<div class="footer"></div>
   </div>
 </template>

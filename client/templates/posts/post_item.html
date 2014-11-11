@@ -2,23 +2,25 @@
 
 	<div class="postItem">
 		<div class="post-content">
-			<div class="col-sm-1">
-				<a class="navbar-brand" href="{{pathFor 'posts'}}">Back</a>
+			<div class="row">
+				<div class="col-sm-6" id="postImg">
+					<img src="{{src}}" class="largeImg">
+				</div>
+				<div class="col-sm-6">	
+					<h2>{{name}}, {{country}}</h2>
+					<h4>What do you do ? </h4> <p>{{wwd}}</p>
+					<h4>How much are you paid ? </h4> <p>{{pwh}}</p>
+					<h4>What work do you want ? </h4><p>{{www}}</p>
+					<h4>How much do you want to be paid ?</h4> <p>{{pww}}</p>
+				</div>
 			</div>
-			<div class="col-sm-6">
-				<img src="{{imageUrl}}" class="largeImg">
-			</div>
-			<div class="col-sm-3">
-				<h2>Score : {{score}}</h2>	
-				<h3>Work We Want : </h3> <h4>{{www}}</h4>
-				<h3>Pay We Want :</h3> <h4>{{pww}}</h4>
-				<h3>Work We Have :</h3><h4>{{wwh}}</h4>
-				<h3>Pay We Have :</h3> <h4>{{pwh}}</h4>
-			</div>
-			<div class="col-sm-2">
-				<h3>Votes left : {{votesLeft}}</h3>
-				<button class='btn btn-lg btn-primary vote'>Up Vote</button>
+			<div class="row">
+				<div class="col-sm-6" id="navBtns">
+					Vote for *name* : <button class='btn btn-lg btn-default vote'>Vote</button><br>
+					<a class="navbar-brand" href="{{pathFor 'posts'}}">back</a>
+					
+				</div>
 			</div>
 		</div>
-</div>
-	</template>
+	</div>
+</template>

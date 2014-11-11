@@ -9,8 +9,9 @@ Template.postItem.events({
 		var votesLeft = Session.get("userVotes");
 		Meteor.call('upVote',this._id);
 		Session.set("userVotes",--votesLeft);
+		alert('Thank you for voting');
 		if(votesLeft == 0){
-			alert("Thanks for voting.  Start New sesstion");
+			// alert("Thanks for voting.  Start New sesstion");
 			window.location.replace("/");
 		}
 

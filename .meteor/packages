@@ -11,4 +11,9 @@ iron:router
 sacha:spin
 jquery
 raix:famono
-
+aldeed:collection2
+cfs:standard-packages
+cfs:filesystem
+cfs:upload-http
+cfs:gridfs
+aldeed:simple-schema

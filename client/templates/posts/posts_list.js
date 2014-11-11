@@ -3,5 +3,5 @@ return Posts.find(); }
 });
 
 Template.postsList.rendered = function(){
-	$("img").unveil();
+	$("img.lazy").lazyload();
 };

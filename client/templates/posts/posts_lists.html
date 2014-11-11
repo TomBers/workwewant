@@ -3,8 +3,10 @@
 	<div class="container">
     {{#each posts}}
 		<div class="col-sm-3">
-      <a href="{{pathFor 'postItem'}}"><img src="/bg.jpg" data-src="{{imageUrl}}" class="thumbImg"></a>
-		<p>Score : {{score}}</p>
+			<div class="thumb">
+      <a href="{{pathFor 'postItem'}}"><img class="lazy" data-original="{{src}}" width="100%" height="auto"></a>
+	  <span class="text">Job : {{wwd}} Hourly Rate: {{pwh}}</span>
+	</div>
 	</div>
 {{/each}}
 	</div>
