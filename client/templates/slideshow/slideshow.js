@@ -20,7 +20,7 @@ if (Meteor.isClient) {
 		tempSurface = new Surface({
 			size: [600, 600],
 			properties: {
-				backgroundImage:  'url(/img1.jpg)',
+				backgroundImage:  'url(/img2.jpg)',
 				backgroundSize:   '100% auto',
 				backgroundRepeat: 'no-repeat',
 				backgroundPosition: 'center'
@@ -102,23 +102,23 @@ if (Meteor.isClient) {
 		bgColorGreen.set(Math.floor((Math.random() * 255) + 1), { duration: colorTweenTime, curve: 'easeIn' });
 		bgColorBlue.set(Math.floor((Math.random() * 255) + 1), { duration: colorTweenTime, curve: 'easeIn' });
 
-		if(fdr.isVisible()){
-			fdr.set(0,{duration: 2000, curve: 'easeIn'});
-		}else{
-
-			var N = Session.get('noPosts');
-			var R = Math.floor(Math.random() * N);
-			Session.set('post',Posts.find({_id:'f7hDiTPCFMyGJim77'}));//.skip(R));
+		// if(fdr.isVisible()){
+		// 			fdr.set(0,{duration: 2000, curve: 'easeIn'});
+		// 		}else{
+		// 
+		// 			var N = Session.get('noPosts');
+		// 			var R = Math.floor(Math.random() * N);
+		// 			Session.set('post',Posts.find({_id:'f7hDiTPCFMyGJim77'}));//.skip(R));
+		// 		
+		// 
+		// 				// var imgURL = Session.get('post').src;
+		// 
+		// 				// tempSurface.setProperties({
+		// 				// 				backgroundImage: 'url('+imgURL+')'	
+		// 				// 			});
+		// 				fdr.set(1,{duration: 2000, curve: 'easeIn'});		
+		// 			}
 		
-
-				// var imgURL = Session.get('post').src;
-
-				// tempSurface.setProperties({
-				// 				backgroundImage: 'url('+imgURL+')'	
-				// 			});
-				fdr.set(1,{duration: 2000, curve: 'easeIn'});		
-			}
-
 
 			return true;
 		}
