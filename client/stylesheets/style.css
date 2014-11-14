@@ -86,8 +86,22 @@ color:white;
   font-size:12px;
 }
 
+.thumb:hover .text {
+	display: block;
+}
+
+.thumb{
+    display: block;
+   word-wrap: break-word;
+}
+
+
 
 @media screen and (max-width:320px) {
+	.thumb:hover .text {
+	    display: none;
+	}
+	
 	#centerNav{
 		word-spacing: 20px;
 		margin-left:5px;
@@ -163,9 +177,7 @@ h3{
 .lazy:hover{
 /*	border:10px solid red;*/
 }
-.thumb:hover .text {
-    display: block
-}
+
 
 .grid-block, .main, .post, .comments li, .comment-form {
   background: #fff;

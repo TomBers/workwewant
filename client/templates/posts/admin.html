@@ -3,9 +3,25 @@
 	<div class="container">
     {{#each posts}}
 		<div class="col-sm-3">
+			
+			<div class="form-group">
+			  <label class="col-md-10 " for="prependedcheckbox"> Make public</label>
+			  <div class="col-md-2">
+			    <div class="input-group">
+			      <span class="input-group-addon">     
+			          <input name="agree" class="chkbox" id="{{_id}}" type="checkbox" checked="{{isChecked}}">     
+			      </span>
+			    </div>
+			  </div>
+			</div>
+			
 			<div class="thumb">
-      <a href="{{pathFor 'postItem'}}"><img class="lazy" data-original="{{src}}" width="100%" height="auto"></a>
-	  <span class="text">Job : {{wwd}}<br> Hourly Rate: {{pwh}}</span>
+      <img class="lazy" data-original="{{src}}" width="100%" height="auto">
+	  <p>Job : {{wwd}}<br> 
+	  Hourly Rate: {{pwh}}<br>
+	  WorkWeWant : {{www}}<br>
+	  PayWeWant : {{pww}}
+	</p>
 	</div>
 	</div>
 {{/each}}
