@@ -3,21 +3,22 @@
     <header class="navbar navbar-default" role="navigation">
       <div class="navbar-header" style="width:100%;background:white;border-bottom:1px solid gray;">
 	<div class="col-sm-6" >
-        <a id="bigHeader"  href="{{pathFor 'home'}}">THE WORK WE WANT
- 			<small>in collaboration with <a href="#">#webwewantfest</a></small></a>
+        <a id="bigHeader"  href="/">THE WORK WE WANT</a>
      </div>
 <div class="col-sm-6" id="centerNav">
 
-			<a href="{{pathFor 'project'}}">Project</a>
-	       <a href="{{pathFor 'about'}}">About</a>
-	       <a href="#">Follow</a>
+			<a href="/">Home</a>
+	       <a href="{{pathFor 'about'}}" id="followus">About Us</a>
 	
 	</div>
 	 </div>
     </header>
-    <div id="main" class="row-fluid">
+    <div id="main" class="row">
       {{> yield}}
     </div>
-	<div class="footer"></div>
+	<div class="footer">
+		<p>©Glasshouse 2014.  Commissioned with <a href="http://www.thespace.org" target="blank"><img src="/space.png"></a> and Freelancer.co.uk <br>
+			<a href="mailto:theworkwewant@gmail.com">theworkwewant@gmail.com</a></p>
+	</div>
   </div>
 </template>

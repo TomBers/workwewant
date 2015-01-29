@@ -3,5 +3,5 @@ return Posts.find({show:true}); }
 });
 
 Template.postsList.rendered = function(){
-	$("img.lazy").lazyload();
+
 };
