@@ -1,24 +1,25 @@
 <template name="layout">
-  <div class="container">
-    <header class="navbar navbar-default" role="navigation">
-      <div class="navbar-header" style="width:100%;background:white;border-bottom:1px solid gray;">
-	<div class="col-sm-6" >
-        <a id="bigHeader"  href="/">THE WORK WE WANT</a>
-     </div>
-<div class="col-sm-6" id="centerNav">
-
-			<a href="/">Home</a>
-	       <a href="{{pathFor 'about'}}" id="followus">About Us</a>
+  <div class="container-fluid">
 	
+<div class="row">	
+<div class="col-sm-10 col-xs-12">
+	 {{> yield}}
+	</div>	
+	
+	
+<div class="col-sm-2 col-xs-12" style="margin-top:75px;text-align:right">
+			<a class='navMenu' href="/" >Home</a><br>
+			<a class='navMenu' href="{{pathFor 'posts'}}" >Workers</a><br>
+			<a class='navMenu' href="{{pathFor 'project'}}" id="followus">About</a><br>
+			<a class='navMenu' href="{{pathFor 'blog'}}" id="followus">Blog</a><br>
+	       <a class='navMenu' href="{{pathFor 'about'}}" id="followus">Contact</a>			
 	</div>
-	 </div>
-    </header>
-    <div id="main" class="row">
-      {{> yield}}
-    </div>
+</div>
+
+<div class="row">
 	<div class="footer">
-		<p>©Glasshouse 2014.  Commissioned with <a href="http://www.thespace.org" target="blank"><img src="/space.png"></a> and Freelancer.co.uk <br>
-			<a href="mailto:theworkwewant@gmail.com">theworkwewant@gmail.com</a></p>
+		<p>CC BY NC 2.0 Glennshootspeople ©Glasshouse 2014.  Commissioned with <a href="http://www.thespace.org" target="blank"><img src="/space.png"></a></p>
 	</div>
   </div>
+</div>
 </template>
