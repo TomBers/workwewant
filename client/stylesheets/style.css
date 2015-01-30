@@ -74,23 +74,23 @@
 }*/
 
 
-body{
+html,body{
 	  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  
 	  color:white;
 	background:black;
-
+	height: 100%;
 }
 .container-fluid{
 	color:white;
-/*	background:url('workersBg.jpg');*/
+ min-height:100%;
 	padding-left:0px;
 	padding-right:0px;
-	background: url('workersBg.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
+/*	background: url('workersBg.jpg'); 
+	background-size: 100% 100%;*/
+/*  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-	min-height:800px;
+  background-size: cover;*/
 /*	height:1000px;*/
 }
 
@@ -101,33 +101,64 @@ body{
 
 }
 
+#wrap{
+	background: url('workersBg.jpg'); 
+	background-size: cover;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -60px;
+
+}
+#workersStories{
+	text-transform: uppercase;
+	font-size:1.5em;
+}
+
+#push, #footer{height:60px;}
+
+
 .navMenu{
 	background:white;
 	color:black;
-	font-size:2.5em;
+	font-size:2.0em;
 	margin-bottom:10px;
+/*	margin-right:50px;*/
 	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+/*	font-weight: bold;*/
+	padding-left:5px;
+	padding-right:15px;
 	display:inline-block;
-	text-align:right;
-	
-	
+	text-align:right;	
+}
+.navMenu:hover{
+	background:black;
+	color:white;
 }
 
 h1{
 /*	font-family: Calibri, san-serif;*/
+	margin-bottom:25px;
 }
 
 h2{
 /*	font-family: Calibri, san-serif;*/
 	margin-bottom:40px;
 }
+h4{
+	color:#FF6E07;
+	margin-bottom:5px;
+	margin-top:25px;
+}
 li{
 	font-size:2em;
 }
 p{font-size:1.2em;}
 .bigLink{
-	font-size:1.8em;
+	font-size:1.5em;
 }
+
 
 .form-horizontal{
 	max-width:90%;
@@ -147,11 +178,7 @@ p{font-size:1.2em;}
 		margin:0 auto;
 		text-align:center;*/
 }
-.footer{
-    padding-left:45px;
-	text-align:left;
-	font-size:12px;
-}
+
 a{
 	color:#FF6E07;
 }
@@ -273,6 +300,7 @@ color:#FF6E07;
 		margin-bottom:0px;
 		margin-top:0px;
 	}
+
 	
 	#bigHeader{
 		margin:0px;

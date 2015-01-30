@@ -1,25 +1,30 @@
 <template name="layout">
-  <div class="container-fluid">
-	
-<div class="row">	
-<div class="col-sm-10 col-xs-12">
-	 {{> yield}}
-	</div>	
-	
-	
-<div class="col-sm-2 col-xs-12" style="margin-top:75px;text-align:right">
-			<a class='navMenu' href="/" >Home</a><br>
-			<a class='navMenu' href="{{pathFor 'posts'}}" >Workers</a><br>
-			<a class='navMenu' href="{{pathFor 'project'}}" id="followus">About</a><br>
-			<a class='navMenu' href="{{pathFor 'blog'}}" id="followus">Blog</a><br>
-	       <a class='navMenu' href="{{pathFor 'about'}}" id="followus">Contact</a>			
-	</div>
-</div>
+	<body>
+		<div id="wrap">	
+			<div class="container-fluid">
 
-<div class="row">
-	<div class="footer">
-		<p>CC BY NC 2.0 Glennshootspeople ©Glasshouse 2014.  Commissioned with <a href="http://www.thespace.org" target="blank"><img src="/space.png"></a></p>
-	</div>
-  </div>
-</div>
+				<div class="row">	
+					<div class="col-sm-10 col-xs-12">
+						{{> yield}}
+					</div>	
+
+
+					<div class="col-sm-2 col-xs-12" style="margin-top:75px;text-align:right">
+						<a class='navMenu' href="/" >Home</a><br>
+						<a class='navMenu' href="{{pathFor 'posts'}}" >Workers</a><br>
+						<a class='navMenu' href="{{pathFor 'project'}}" id="followus">About</a><br>
+						<a class='navMenu' href="{{pathFor 'blog'}}" id="followus">Blog</a><br>
+						<a class='navMenu' href="{{pathFor 'about'}}" id="followus">Contact</a>			
+					</div>
+				</div>
+					<div id="push"></div>
+			</div>
+			</div>
+			<div id="footer">
+				<div class="container">
+					<p>CC BY NC 2.0 Glennshootspeople ©Glasshouse 2014.  Commissioned with <a href="http://www.thespace.org" target="blank"><img src="/space.png"></a></p>
+				</div>
+			</div>
+		
+	</body>
 </template>
