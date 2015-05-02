@@ -1,0 +1,70 @@
+<template name='work'>
+
+  <style>
+  .navMenu{
+    display:none;
+    }
+    #wrap{
+    	background: none;
+    }
+    input,button{
+      color:black;
+
+    }
+    .btn{font-size:.9em;}
+    #getUsr{
+      padding:50px;
+      border:1px solid white;
+      display:block;
+      margin: 0 auto;
+      font-size:2em;
+    }
+    #vids{
+      display:none;
+    }
+    .vid{
+      /*display:block;*/
+      border:5px solid white;}
+      #textarea{width:100%;font-size:2em;color:black;}
+      iframe{
+        margin: 0 auto;
+        /*width:100%;
+        min-height:315px;
+        height:auto;*/
+      }
+  </style>
+
+<div id='getUsr'>
+  Enter Username :
+<input type="text" name="user" id="user">
+<button class="btn btn-primary user">Get to Work</button>
+</div>
+
+<div id='vids'>
+<h1>Welcome <strong>{{user}}</strong></h1>
+<h2>There are currently <strong>14,345,729</strong> users online, you have {{points}} points</h2>
+
+<div class='vid'>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OpLbhmgyhsQ" frameborder="0" allowfullscreen></iframe>
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Work in the UK</legend>
+
+<!-- Textarea -->
+<div class="control-group">
+  <label class="control-label" for="textarea">Tag the video</label>
+  <div class="controls">
+    <textarea id="textarea" name="textarea"></textarea>
+  </div>
+  <button class="btn btn-primary backtoNav">I am done.</button>
+</div>
+
+</fieldset>
+</form>
+</div>
+
+</div>
+
+</template>
