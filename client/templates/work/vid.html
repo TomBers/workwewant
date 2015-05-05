@@ -1,0 +1,44 @@
+<template name='vid'>
+
+  <style>
+  .navMenu{
+  display:none;
+  }
+  #wrap{
+    background: none;
+  }
+  input,button{
+    color:black;
+
+  }
+  #textarea{width:100%;font-size:2em;color:black;}
+  .done{font-size:2em;display:block;margin:0 auto;}
+  </style>
+
+<div id='vids'>
+<h1>Watch this, then tag it with descriptive keywords.</h1>
+
+
+<div class='vid'>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/{{vidId}}" frameborder="0" allowfullscreen style="display:block;margin:0 auto;max-width:100%"></iframe>
+
+<fieldset>
+
+<!-- Form Name -->
+<legend>{{title}}</legend>
+
+<!-- Textarea -->
+<div class="control-group">
+  <label class="control-label" for="textarea">Tag :</label>
+  <div class="controls">
+    <textarea id="textarea" name="textarea"></textarea>
+  </div>
+  <button class="btn btn-primary done">I am done.</button>
+</div>
+
+</fieldset>
+
+</div>
+
+</div>
+</template>

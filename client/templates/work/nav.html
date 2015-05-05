@@ -1,0 +1,45 @@
+<template name='nav'>
+<style>
+.navMenu{
+  display:none;
+  }
+  #wrap{
+    background: none;
+  }
+  input,button{
+    color:black;
+
+  }
+  img{display:block;margin:0 auto}
+  .point{text-align:center;}
+  .done{font-size:2em;display:block;margin:0 auto;}
+
+  .score{
+    left: 85%;
+  position: relative;
+  top: 15px;
+  }
+  img{max-width:100%;height:auto;}
+
+  </style>
+  <div class='score'><strong>{{points}}</strong> points</div>
+<div class='container'>
+  <h1>Hi <strong>{{user}}</strong></h1>
+  <h2>Pick a video to start earning</h2>
+
+  <img src="NAV.jpg" width="980" height="745" usemap="#Map" border="0" />
+<map name="Map" id="Map">
+  <area shape="rect" coords="288,42,416,296" href="/vid/OpLbhmgyhsQ/Anarchy_in_the_UK" target="_self" alt="Flexibility" />
+  <area shape="rect" coords="510,81,677,299" href="/vid/nhFIfKjT6dk/Wrestling" target="_self" alt="Unitisation" />
+  <area shape="rect" coords="793,107,905,296" href="/nav/zccccxcxz" target="_self" alt="Trust" />
+  <area shape="rect" coords="65,358,187,689" href="/nav/rwgrhrhr" target="_self" alt="Workers Voice" />
+  <area shape="rect" coords="277,570,434,687" href="/nav/trhtrh" target="_self" alt="Competition" />
+  <area shape="rect" coords="514,465,668,688" href="/nav/kopih" target="_self" alt="Insecurity" />
+  <area shape="rect" coords="774,479,921,688" href="/nav/uiopu" target="_self" alt="Solidarity" />
+</map>
+
+
+  <button class="btn btn-primary done">Finished</button>
+</div>
+
+</template>

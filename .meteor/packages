@@ -10,3 +10,4 @@ iron:router
 sacha:spin
 jquery
 reywood:iron-router-ga
+u2622:persistent-session
