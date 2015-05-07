@@ -1,0 +1,134 @@
+<template name='tmpHome'>
+
+<style>
+
+/*@import url(http://fonts.googleapis.com/css?family=Oswald);*/
+/*.navMenu{
+  display:none;
+  }*/
+  .container{
+    /*padding:20px;*/
+  }
+  #wrap{
+    background: none;
+  }
+  .nvPt{
+
+    /*margin-top:30px;*/
+  }
+  .orange{color: #F36E2B;font-size:2.5em;}
+  .nvPt img{margin-top:10px;border:4px solid white;width:100%;height:auto;}
+  .nvPt img:hover{border:4px solid #F36E2B;}
+  /*.fp{width:100%;height:auto}*/
+
+
+  .navBx{
+    /*border:2px solid blue;*/
+
+  }
+  .overlay{
+    /*display:inline-block;*/
+    /*border:1px solid red;*/
+    font-size:1.2em;
+    position: absolute;
+   top: 0;
+   left: 0;
+   width: 65%;
+   /*height: 100%;*/
+   padding-top: 70px;
+   padding-left:70px;
+  }
+
+  .res{
+    display:block;
+    width:100%;height:auto;
+    margin:0 auto;
+    max-width:500px;
+  }
+  .centHead{
+    font-family:Oswald;
+    /*border:1px solid red;*/
+    /*text-align:center;*/
+  }
+  .centHead h1{margin-left:18px;
+  }
+  @media (min-width: 1px) {
+    .overlay{width:100%;display:block;position:relative;font-size:1.2em;
+    padding-left:20px;}
+    }
+
+  @media (min-width: 992px) {
+    .overlay{padding-left:35px;padding-top:0px;position: absolute;font-size:.95em;width: 65%;}
+  }
+
+  @media (min-width: 1200px) {
+    .overlay{padding-left:70px; padding-top: 70px;position: absolute;font-size:1.em;width: 65%;}
+    }
+  @media (min-width: 1400px) {
+    .overlay{padding-left:70px; padding-top: 70px;position: absolute;font-size:1.2em;width: 65%;}
+    }
+
+  </style>
+
+<div class='container-fluid'>
+
+  <div class='row'>
+  <div class='col-md-12 col-md-offset-0 col-sm-12'>
+  <img class='fp' src='pipe.svg' width="980" height="842" usemap="#Map">
+  <!-- <map name="Map" id="Map">
+  <area shape="rect" coords="401,39,488,145" href="#" target="_self" alt="Tap" />
+  <area shape="rect" coords="370,159,432,227" href="#" target="_self" alt="Workers" />
+  <area shape="rect" coords="320,597,388,660" href="#" target="_self" alt="Pump" />
+  <area shape="rect" coords="153,278,209,331" href="#" target="_self" alt="Tip" />
+</map> -->
+</div>
+
+   <div class='overlay'>
+  <h1 class='orange'>The Work We Want</h1>
+  <p>We face a radically different future of work, which is being shaped by
+    the web.  The days of steady 9-5 are over, as workers around the world come online.
+    Competiton for jobs is global, work is brought and sold on demand, and the price
+    of labour is falling.<br><br>
+
+  How should we respond as a global workforce? How can we prepare for a different future of work?
+  Are we going to compete, co-operate or exploit our fellow workers?<br><br>
+
+  The Work We Want explores these questions through a series of creative processes:</p>
+  <!-- <div class='col-lg-4 col-md-6 col-sm-12 navBx'>
+
+  <div class='col-lg-6 col-md-4 col-sm-6 nvPt'><a href='#'><img src='info.jpg' title='Information'></a></div>
+  <div class='col-lg-6 col-md-4 col-sm-6 nvPt'><a href='#'><img src='vids.jpg' title='See the Videos'></a></div>
+  <div class='col-lg-6 col-md-4 col-sm-6 nvPt'><a href='#'><img src='game.jpg' title='Do Digital Work'></a></div>
+  <div class='col-lg-6 col-md-4 col-sm-6 nvPt'><a href='#'><img src='byronTricia.jpg' title='See Outsourced Art work'></a></div>
+  <div class='col-lg-6 col-md-4 col-sm-6 nvPt'><a href='#'><img src='workers.jpg' title='See the Workers'></a></div>
+</div> -->
+
+</div>
+<div class='col-sm-12'>
+  <div class='row'>
+  <div class='col-sm-4 col-sm-offset-2 centHead'><h1>INFOGRAPHIC</h1><a href='/infographic'><img class='res' src='infographic.jpg'></a></div>
+  <div class='col-sm-4  centHead'><h1>VIDEO INTERVIEWS</h1><a href='https://www.youtube.com/user/1979cwebb/feed' target='_blank'><img class='res' src='video_interviews.jpg'></a></div>
+</div>
+
+<div class='row'>
+  <div class='col-sm-4 col-sm-offset-2 centHead'><h1>ONLINE LABOUR GAME</h1><a href='/work'><img class='res' src='online_game.jpg'></a></div>
+  <div class='col-sm-4 centHead'><h1>OUTSOURCED ART</h1><a href='#'><img class='res' src='outsourced_artwork.jpg'></a></div>
+</div>
+<div class='row'>
+  <div class='col-sm-4 col-sm-offset-2 centHead'><h1>WORKER STORIES</h1><a href='{{pathFor 'posts'}}'><img class='res' src='workerstories.jpg'></a></div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+</div>
+<style>
+.fp{width:100%;height:auto;}
+
+</style>
+
+</template>
