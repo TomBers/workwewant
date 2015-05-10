@@ -18,8 +18,12 @@
 <div id='vids'>
 <h1 style='margin-bottom:60px'>Watch <span style='color:#F36E2B'>{{title}}</span>, then tag it with descriptive keywords.</h1>
 
-
+{{#if viewed}}
+<a href='/nav'>You have already worked on this - go see another</a>
+{{else}}
 <div class='col-md-4 col-sm-12'>
+
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/{{vidId}}" frameborder="0" allowfullscreen style="display:block;margin:0 auto;max-width:100%"></iframe>
 </div>
@@ -32,6 +36,8 @@
     <button class="btn btn-primary done">I am done.</button>
   </div>
 </div>
+  {{/if}}
+
 
 
 

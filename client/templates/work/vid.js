@@ -2,6 +2,11 @@ Template.vid.helpers({
 user: function() {
 return Session.get('user');
 },
+viewed: function(){
+  var tmp = Session.get('viewed');
+  // console.log(tmp);
+  return Session.get('viewed').indexOf(this.vidId) > -1;
+}
 
 // points: function(){
 // 	return Session.get('points');
@@ -26,19 +31,26 @@ Template.vid.events({
   var regex = /\s+/gi;
   var wordCount = txt.trim().replace(regex, ' ').split(' ').length;
 
-  Session.setPersistent('points', parseInt(Session.get('points')) + parseInt(wordCount));
+
   // Session.set('points',wordCount);
 
   // alert(wordCount);
-  if(wordCount == 0){
-    alert('You have entered no tags - no tags, no points');
-  }
+  if(wordCount < 5 ){
+    alert('You have entered '+ wordCount +' tags - please enter at least 5 tags to continue.');
+  }else{
+    var vidId = t.data.vidId;
 
-  var vidId = t.data.vidId;
+    Session.setPersistent('points', parseInt(Session.get('points')) + 1);
+    var tmp = Session.get('viewed');
+    tmp.push(vidId);
+    Session.setPersistent('viewed', tmp);
+
+
   Meteor.call('storeTags', vidId,Session.get('user'),txt);
 
 
   Router.go('scoring');
+}
   // Store Tags from the Text area
 
 

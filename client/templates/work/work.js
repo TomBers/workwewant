@@ -1,5 +1,6 @@
 Session.setDefaultPersistent('points', 0);
 Session.setDefaultPersistent('user', '');
+Session.setDefaultPersistent('viewed', []);
 
 var started = false;
 Template.work.events({
