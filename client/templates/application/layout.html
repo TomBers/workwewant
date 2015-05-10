@@ -2,23 +2,24 @@
 	<body>
 		<div class="container-fluid">
 
+
+			<div class="col-sm-12 col-xs-12">
 			<div class="row">
-				<div class="col-sm-11 col-xs-12">
+
+					<a href='/' ><h1 style='color:white;margin-left:30px'>The Work We Want</h1></a>
 					{{> yield}}
 				</div>
-				<div class="col-sm-1 col-xs-0">
-					<img src='/tap3.svg' style='max-width:127%'>
+
+			<!-- <div id="push"></div> -->
+			<div class="row">
+				<div id="footer" style='background-color:white;'>
+
+
+						<p><a style='color:black' href="{{pathFor 'about'}}" id="followus">About Us</a><span style='color:black'> || Commissioned by :</span><a href="http://www.thespace.org" target="blank"><img src="/space.png"></a></p>
+
 				</div>
 			</div>
-
-			<div id="push"></div>
-
-				<div id="footer">
-					<div class="container">
-
-						<p><a href="{{pathFor 'about'}}" id="followus">Contact</a> <a href="{{pathFor 'blog'}}" id="followus">Blog</a><a href="http://www.thespace.org" target="blank"><img src="/space.png"></a></p>
-					</div>
-				</div>
-			</div>
+		</div>
+	</div>
 			</body>
 		</template>

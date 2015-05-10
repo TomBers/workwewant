@@ -6,7 +6,7 @@
 /*.navMenu{
 display:none;
 }*/
-.container-fluid{
+/*.container-fluid{
   padding:20px;
 }
 #wrap{
@@ -16,70 +16,88 @@ display:none;
 
   /*margin-top:30px;*/
 }
-.orange{color: #F36E2B;font-size:2.5em;}
-.nvPt img{margin-top:10px;border:4px solid white;width:100%;height:auto;}
-.nvPt img:hover{border:4px solid #F36E2B;}
-/*.fp{width:100%;height:auto}*/
-
-
-.navBx{
-  /*border:2px solid blue;*/
-
-}
+/*.nvPt img{margin-top:10px;border:4px solid white;width:100%;height:auto;}
+.nvPt img:hover{border:4px solid #F36E2B;}*/
+/*.fp{width:100%;height:auto}*/*/
 
 
 .res{
   display:block;
-  width:100%;height:auto;
-  margin:0 auto;
-  max-width:500px;
+  width:100%;
+  height:auto;
+  margin:10px auto;
+  max-width:100%;
+}
+img{
+  max-width:100%;
 }
 .centHead{
-  font-family:Oswald;
+  /*font-family:Oswald;*/
+  margin-top:40px;
   /*border:1px solid red;*/
   /*text-align:center;*/
 }
-.centHead h1{margin-left:18px;
+.centHead a{
+  font-size:3em;
+  color:white;
 }
 
-.fp{width:100%;height:auto;}
+.thumbBigger{
+  background:rgba(0,0,0,0.7);
+  font-size:0.5em;
+  width:90%;
+  left:15px;
+}
 
 </style>
-
-<div class='container-fluid'>
-
-
-    <div class='col-md-12 col-md-offset-0 col-sm-12'>
-
       <div class='row'>
-      <div class='col-md-8'>
-      <h1 class='orange'>The Work We Want</h1>
+      <div class='col-md-6'>
+
       <p>We face a radically different future of work, which is being shaped by
         the web.  The days of steady 9-5 are over, as workers around the world come online.
         Competiton for jobs is global, work is brought and sold on demand, and the price
-        of labour is falling.<br><br>
-
+        of labour is falling.
         How should we respond as a global workforce? How can we prepare for a different future of work?
-        Are we going to compete, co-operate or exploit our fellow workers?<br><br>
+        Are we going to compete, co-operate or exploit our fellow workers?
 
         The Work We Want explores these questions through a series of creative processes:</p>
       </div>
+
     </div>
         <div class='row'>
-          <div class='col-sm-4  centHead'><a href='/infographic'><h1>INFOGRAPHIC</h1><img class='res' src='infographic.jpg'></a></div>
-          <div class='col-sm-4  centHead'><a href='/interviews' ><h1>VIDEO INTERVIEWS</h1><img class='res' src='video_interviews.jpg'></a></div>
-          <div class='col-sm-4  centHead'><a href='/work'><h1>ONLINE LABOUR GAME</h1><img class='res' src='online_game.jpg'></a></div>
+          <div class='col-lg-4 col-sm-6 col-xs-12  centHead'>
+            <div class="thumb">
+            <a href='/infographic'>Infographic<img class='res' src='infographic.jpg'></a>
+            <span class="text thumbBigger">  <a href='/infographic'>Discover facts and figures about digital labour through our interactive infographic, and take a journey from the global and UK work situation to a picture of work in the future.</a></span>
+          </div>
+            </div>
+          <div class='col-lg-4 col-sm-6 col-xs-12  centHead'>
+            <div class="thumb">
+            <a href='/interviews' >Interviews<img class='res' src='video_interviews.jpg'></a>
+            <span class="text thumbBigger"><a href='/interviews' >We spoke to a wide range of experts on digital labour, from workers to researchers, policy makers to lawyers. Watch our video interviews to hear what they had to say.</a></span>
+          </div>
+            </div>
+          <div class='col-lg-4 col-sm-6 col-xs-12  centHead'>
+            <div class="thumb">
+            <a href='/work'>Onlinework game<img class='res' src='online_game.jpg'></a>
+            <span class="text thumbBigger"><a href='/work'>Discover what it's like to be a microworker by playing our online game. You watch, you work and you earn…peanuts!</a></span>
+          </div>
+            </div>
 
 
-          <div class='col-sm-4 centHead'><a href='/byron'><h1>OUTSOURCED ART</h1><img class='res' src='outsourced_artwork.jpg'></a></div>
-          <div class='col-sm-4  centHead'><a href='{{pathFor 'posts'}}'><h1>WORKER STORIES</h1><img class='res' src='workerstories.jpg'></a></div>
-          <div class='col-sm-4 centHead'><a href="{{pathFor 'blog'}}" id="followus"><h1>JOURNEY</h1><img class='res' src='festival2.jpg'></a></div>
+          <div class='col-lg-4 col-sm-6 col-xs-12 centHead'><div class="thumb"><a href='/byron'>Outsourced Art<img class='res' src='outsourced_artwork.jpg'></a>
+            <span class="text thumbBigger"><a href='/byron'>We outsourced the production of an artwork about Canadian freelancer Tricia Schroeder to artist Byron Peters. Byron worked with Tricia to collaboratively produce this video piece.</a></span>
+          </div></div>
+          <div class='col-lg-4 col-sm-6 col-xs-12  centHead'><div class="thumb"><a href='{{pathFor 'posts'}}'>Workers Stories<img class='res' src='workerstories.jpg'></a>
+            <span class="text thumbBigger"><a href='{{pathFor 'posts'}}'>We ran a competition asking workers around the world about their experiences of work. Discover what they do, what they earn, what they want to do, and what they want to earn.</a></span>
+          </div></div>
+          <div class='col-lg-4 col-sm-6 col-xs-12 centHead'><div class="thumb"><a href="{{pathFor 'blog'}}" id="followus">Blog<img class='res' src='festival2.jpg'></a>
+            <span class="text thumbBigger"><a href="{{pathFor 'blog'}}" id="followus">Read our blog to see documentation of the project as it unfolded over the last year, from running our first competition on a freelance platform to installing our work at the Southbank Centre.</a></span>
+          </div></div>
         </div>
 
 
-      </div>
 
-  </div>
 
 
 
