@@ -1,11 +1,110 @@
-<template name="homepg">
-	<div class="col-sm-5 textBox">
-	<h1>THE WORK WE WANT</h1>
-	<br>
-   	<p>The world of work is changing. Millions of people access and carry out work online, but who are they and what are their experiences? <br><br>The Work We Want seeks to find
-	out the stories of digital workers around the world and with them, imagine a better
-	future of work.</p>
-	<h2 id="workersStories"><a href='{{pathFor 'posts'}}'>View Worker Stories</a></h2>
+<template name='homepg'>
 
-  </div>
+<style>
+
+/*@import url(http://fonts.googleapis.com/css?family=Oswald);*/
+/*.navMenu{
+display:none;
+}*/
+/*.container-fluid{
+  padding:20px;
+}
+#wrap{
+  background: none;
+}
+.nvPt{
+
+  /*margin-top:30px;*/
+}
+/*.nvPt img{margin-top:10px;border:4px solid white;width:100%;height:auto;}
+.nvPt img:hover{border:4px solid #F36E2B;}*/
+/*.fp{width:100%;height:auto}*/*/
+
+
+.res{
+  border:2px solid white;
+  /*display:block;
+  width:100%;
+  height:auto;
+  margin:10px auto;
+  max-width:100%;*/
+}
+/*img{
+  max-width:100%;
+  width:100%;
+}*/
+.img-responsive{
+  width:100%;
+}
+.centHead{
+  /*font-family:Oswald;*/
+  margin-top:40px;
+  /*border:1px solid red;*/
+  /*text-align:center;*/
+}
+.centHead a{
+  font-size:3em;
+  color:white;
+}
+
+.thumbBigger{
+  background:rgba(0,0,0,0.7);
+  font-size:0.5em;
+  width:90%;
+  left:15px;
+}
+
+</style>
+      <div class='row'>
+      <div class='col-md-6'>
+
+      <p>We face a radically different future of work, which is being shaped by
+        the web.  The days of steady 9-5 are over, as workers around the world come online.
+        Competiton for jobs is global, work is brought and sold on demand, and the price
+        of labour is falling.
+        How should we respond as a global workforce? How can we prepare for a different future of work?
+        Are we going to compete, co-operate or exploit our fellow workers?
+
+        The Work We Want explores these questions through a series of creative processes:</p>
+      </div>
+
+    </div>
+        <div class='row' style='margin-bottom:30px'>
+          <div class='col-lg-4 col-sm-6 col-xs-12  centHead'>
+            <div class="thumb">
+            <a href='/infographic'>Infographic<img class='img-responsive' src='infographic.jpg'></a>
+            <span class="text thumbBigger">  <a href='/infographic'>Discover facts and figures about digital labour through our interactive infographic, and take a journey from the global and UK work situation to a picture of work in the future.</a></span>
+          </div>
+            </div>
+          <div class='col-lg-4 col-sm-6 col-xs-12  centHead'>
+            <div class="thumb">
+            <a href='/interviews' >Interviews<img class='img-responsive' src='video_interviews.jpg'></a>
+            <span class="text thumbBigger"><a href='/interviews' >We spoke to a wide range of experts on digital labour, from workers to researchers, policy makers to lawyers. Watch our video interviews to hear what they had to say.</a></span>
+          </div>
+            </div>
+          <div class='col-lg-4 col-sm-6 col-xs-12  centHead'>
+            <div class="thumb">
+            <a href='/work'>Onlinework game<img class='img-responsive' src='online_game.jpg'></a>
+            <span class="text thumbBigger"><a href='/work'>Discover what it's like to be a microworker by playing our online game. You watch, you work and you earn…peanuts!</a></span>
+          </div>
+            </div>
+
+
+          <div class='col-lg-4 col-sm-6 col-xs-12 centHead'><div class="thumb"><a href='/byron'>Outsourced Art<img class='img-responsive' src='outsourced_artwork.jpg'></a>
+            <span class="text thumbBigger"><a href='/byron'>We outsourced the production of an artwork about Canadian freelancer Tricia Schroeder to artist Byron Peters. Byron worked with Tricia to collaboratively produce this video piece.</a></span>
+          </div></div>
+          <div class='col-lg-4 col-sm-6 col-xs-12  centHead'><div class="thumb"><a href='{{pathFor 'posts'}}'>Workers Stories<img class='img-responsive' src='workerstories.jpg'></a>
+            <span class="text thumbBigger"><a href='{{pathFor 'posts'}}'>We ran a competition asking workers around the world about their experiences of work. Discover what they do, what they earn, what they want to do, and what they want to earn.</a></span>
+          </div></div>
+          <div class='col-lg-4 col-sm-6 col-xs-12 centHead'><div class="thumb"><a href="{{pathFor 'blog'}}" id="followus">Blog<img class='img-responsive' src='blog.jpg'></a>
+            <span class="text thumbBigger"><a href="{{pathFor 'blog'}}" id="followus">Read our blog to see documentation of the project as it unfolded over the last year, from running our first competition on a freelance platform to installing our work at the Southbank Centre.</a></span>
+          </div></div>
+        </div>
+
+
+
+
+
+
+
 </template>

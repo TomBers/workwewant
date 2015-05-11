@@ -12,13 +12,7 @@ input,button{
 
 }
 .btn{font-size:.9em;}
-#getUsr{
-  padding:50px;
-  /*border:1px solid white;*/
-  display:block;
-  margin: 0 auto;
-  font-size:2em;
-}
+
 #vids{
   display:none;
 }
@@ -33,42 +27,51 @@ input,button{
     height:auto;*/
   }
   .text{width:305px;}
+  .img-responsive{
+    width:100%;
+  }
+
+  .thumbBigger{
+    background:rgba(0,0,0,0.9);
+    font-size:2.5em;
+    width:100%;
+    left:15px;
+  }
+
   </style>
 
-  <div id='getUsr'>
-    <h1>Work We Want: We Pay Peanuts</h1>
     <h2>Here's how it works:</h2>
 
     <div style="display:inline-block;">
     <div class="col-lg-4 col-sm-6 col-xs-12 item">
       <div class="thumb">
-        <img src='game_button.svg' width="300px" height="auto">
-        <span class="text">Watch : Select and watch videos videos about online work</span>
+        <img src='/eye.png' class='img-responsive'>
+        <span class="text thumbBigger">Watch : Select and watch videos videos about online work</span>
       </div>
     </div>
 
     <div class="col-lg-4 col-sm-6 col-xs-12 item">
       <div class="thumb">
-        <img src='game_button.svg' width="300px" height="auto">
-        <span class="text">Work: Tag the videos with descriptive keywords (tags)</span>
+        <img src='/work.svg' class='img-responsive'>
+        <span class="text thumbBigger">Work: Tag the videos with descriptive keywords (tags)</span>
       </div>
     </div>
 
     <div class="col-lg-4 col-sm-6 col-xs-12 item">
       <div class="thumb">
-        <img src='game_button.svg' width="300px" height="auto">
-        <span class="text">Earn: Get paid in peanuts</span>
+        <img src='/earn.png' class='img-responsive'>
+        <span class="text thumbBigger">Earn: Get paid in peanuts</span>
       </div>
     </div>
 
 </div>
-  <div style="display:block;margin-top:20px">
+  <div class="col-sm-12" style="display:block;margin-top:20px;font-size:2.2em;margin-bottom:50px;margin-top:20px">
     Enter Username :
     <input type="text" name="user" id="user">
     <button class="btn btn-primary user">Get to Work</button>
   </div>
 
-</div>
+
 
 
 </template>

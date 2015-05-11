@@ -10,6 +10,7 @@ points: function(){
 
 Template.nav.rendered = function(){
 	imageMapResize('#Map');
+	imageMapResize('#Map2');
 };
 
 Template.nav.events({

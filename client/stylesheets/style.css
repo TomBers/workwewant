@@ -115,7 +115,7 @@ html,body{
 	font-size:1.5em;
 }
 
-#push, #footer{height:60px;}
+/*#push, #footer{height:60px;}*/
 
 
 .navMenu{
@@ -333,9 +333,9 @@ color:#FF6E07;
 	#background{
 		padding-top:0px;
 	}
-	.footer{
+	/*.footer{
 	    padding-left:5px;
-	}
+	}*/
 
 }
 

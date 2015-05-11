@@ -21,17 +21,14 @@
 {{#if viewed}}
 <a href='/nav'>You have already worked on this - go see another</a>
 {{else}}
-<div class='col-md-4 col-sm-12' style='min-height:600px'>
-
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/{{vidId}}" frameborder="0" allowfullscreen style="display:block;margin:0 auto;max-width:100%"></iframe>
+<div class='col-md-4 col-md-offset-2 col-sm-12' >
+<iframe width="560" height="315" src="https://www.youtube.com/embed/{{vidId}}?controls=0&showinfo=0" frameborder="0" allowfullscreen style="display:block;margin:0 auto;max-width:100%"></iframe>
 </div>
-<div class='col-md-8 col-sm-12'>
+<div class='col-md-4 col-sm-12' style='min-height:600px'>
   <div class="control-group">
-    <label class="control-label" for="textarea">Add Tags</label>
+    <label class="control-label" for="textarea" style='margin-bottom:30px'>Add Tags</label>
     <div class="controls">
-      <textarea id="textarea" name="textarea"></textarea>
+      <textarea id="textarea" name="textarea" style='height:215px'></textarea>
     </div>
     <button class="btn btn-primary done">I am done.</button>
   </div>

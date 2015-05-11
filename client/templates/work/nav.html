@@ -14,19 +14,16 @@
   .point{text-align:center;}
   .done{font-size:2em;display:block;margin:0 auto;}
 
-  .score{
-    left: 85%;
-  position: relative;
-  top: 15px;
-  }
+
   img{max-width:100%;height:auto;}
   #theme{width:100%;height:auto;margin-bottom:30px;}
   </style>
-  <div class='score'><strong>{{points}}</strong> peanuts</div>
-<div class='container'>
-  <h1>Hi <strong>{{user}}</strong></h1>
-  <h2>Pick a video to start earning</h2>
+  <div class='col-lg-2 col-lg-offset-10 col-md-4 col-md-offset-8 col-sm-6 col-sm-offset-6'>Hi <strong>{{user}}</strong> you have <strong>{{points}}</strong> peanuts</div>
 
+  <div class='col-md-6 col-sm-12'><a href="/vid/jLD8KdUmKNQ/UK_Context" target="_self"><img src='uk.svg' style='width:30%'></a></div>
+  <div class='col-md-6 col-sm-12'><a href="/vid/oc8QsWZodIA/World_Context" target="_self"><img src='world.svg' style='width:80%'></a></div>
+
+  <div class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12' style='margin-top:30px'>
   <img src="game_pg2.svg" width="514" height="377" usemap="#Map" border="0" id='theme' />
 <map name="Map" id="Map">
   <area shape="rect" coords="79,3,168,153" href="/vid/cNVcKNdgTAI/Flexibility" target="_self" alt="Flexibility" />
@@ -37,21 +34,17 @@
   <area shape="rect" coords="265,228,368,376" href="/vid/_cli5m2G1fY/Insecurity" target="_self" alt="Insecurity" />
   <area shape="rect" coords="426,244,533,391" href="/vid/1YIwYQoE4mA/Worker Solidarity" target="_self" alt="Solidarity" />
 </map>
-
-
-  <!-- <img src="game_pg2.svg" width="980" height="745" usemap="#Map" border="0" />
-<map name="Map" id="Map">
-  <area shape="rect" coords="288,42,416,296" href="/vid/cNVcKNdgTAI/Flexibility" target="_self" alt="Flexibility" />
-  <area shape="rect" coords="510,81,677,299" href="/vid/ZnoGAVHbI8o/Unitisation" target="_self" alt="Unitisation" />
-  <area shape="rect" coords="793,107,905,296" href="/vid/3pHeVlINalY/Trust" target="_self" alt="Trust" />
-  <area shape="rect" coords="65,358,187,689" href="/vid/zpA9vdPY3K0/Workers Voice" target="_self" alt="Workers Voice" />
-  <area shape="rect" coords="277,570,434,687" href="/vid/vhSwr7vpdco/Competition" target="_self" alt="Competition" />
-  <area shape="rect" coords="514,465,668,688" href="/vid/_cli5m2G1fY/Insecurity" target="_self" alt="Insecurity" />
-  <area shape="rect" coords="774,479,921,688" href="/vid/1YIwYQoE4mA/Worker Solidarity" target="_self" alt="Solidarity" />
-</map> -->
-
-
-  <button class="btn btn-primary done">Finished</button>
 </div>
+
+<img src="ccc.svg" alt="" width="612" height="299" usemap="#Map2" border="0" style='width:80%'/>
+<map name="Map2" id="Map2">
+  <area shape="circle" coords="112,107,66" href="/vid/wcThyHNpXmU/Compete" target="_self" alt="Compete" />
+  <area shape="circle" coords="302,107,65" href="/vid/FtjJYzEDkCw/Capitalise" target="_self" alt="Capitalise" />
+  <area shape="circle" coords="496,106,65" href="/vid/z2Tj-s5XnvI/Cooperate" target="_self" alt="Cooperate" />
+</map>
+
+
+  <button class="btn btn-primary done" style='margin-bottom:50px'>Finished</button>
+
 
 </template>
