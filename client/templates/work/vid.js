@@ -8,6 +8,7 @@ viewed: function(){
   return Session.get('viewed').indexOf(this.vidId) > -1;
 }
 
+
 // points: function(){
 // 	return Session.get('points');
 // },
@@ -16,15 +17,27 @@ viewed: function(){
 // }
 });
 
+Template.vid.rendered = function(){
+
+	Session.setDefaultPersistent('points', 0);
+	Session.setDefaultPersistent('user', 'Guest');
+	Session.setDefaultPersistent('viewed', []);
+};
+
 Template.vid.events({
-  'keypress #textarea':function(e,t){
-    // var txt = t.find('#textarea').value;
-    // var regex = /\s+/gi;
-    // var wordCount = txt.trim().replace(regex, ' ').split(' ').length;
-    // Session.set('wordCount',wordCount);
+//   'keypress #textarea':function(e,t){
+//     // var txt = t.find('#textarea').value;
+//     // var regex = /\s+/gi;
+//     // var wordCount = txt.trim().replace(regex, ' ').split(' ').length;
+//     // Session.set('wordCount',wordCount);
+// },
+
+'click button.back, touchstart button.back':function(e,t){
+
+  window.history.back();
 },
 
-'click .done':function(e,t){
+'click button.done, touchstart button.done':function(e,t){
 
   // Store Tags from the Text area
   var txt = t.find('#textarea').value;

@@ -82,7 +82,7 @@ html,body{
 }
 .container-fluid{
 	color:white;
- min-height:100%;
+ min-height:110%;
 	padding-left:0px;
 	padding-right:0px;
 /*	background: url('workersBg.jpg');
@@ -188,6 +188,9 @@ p{font-size:1.2em;}
 
 a{
 	color:#FF6E07;
+}
+a:hover,h1:hover{
+	color:white;
 }
 
 

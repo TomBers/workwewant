@@ -11,11 +11,15 @@ points: function(){
 Template.nav.rendered = function(){
 	imageMapResize('#Map');
 	imageMapResize('#Map2');
+
+	Session.setDefaultPersistent('points', 0);
+	Session.setDefaultPersistent('user', 'Guest');
+	Session.setDefaultPersistent('viewed', []);
 };
 
 Template.nav.events({
-	'click .done':function(e,t){
-		alert('Congratylations '+Session.get('user')+'! You have ' + Session.get('points') + ' peanuts go to the desk to collect them.')
+	'click button.done, touchstart button.done':function(e,t){
+		alert('Congratulations '+Session.get('user')+'! You have ' + Session.get('points') + ' peanuts.')
 		Meteor.call('userScore', Session.get('user'),Session.get('points'), function(e,d){
 			Session.setPersistent('user','');
 			Session.setPersistent('points',0);

@@ -1,4 +1,4 @@
-<template name='oldnav'>
+<template name='nav'>
 <style>
 .navMenu{
   display:none;
@@ -17,13 +17,39 @@
 
   img{max-width:100%;height:auto;}
   #theme{width:100%;height:auto;margin-bottom:30px;}
+
+  .col-sm-4{margin-bottom: 20px;}
+  .gameImg:hover{
+    /*max-width:98%;*/
+    /*border-right:2px solid white;*/
+  }
   </style>
 
   <h2>Pick a video to start earning</h2>
 
-  <div class='col-lg-2 col-lg-offset-10 col-md-4 col-md-offset-8 col-sm-6 col-sm-offset-6'><strong>{{user}}</strong> you have <strong>{{points}}</strong> peanuts</div>
+<br><br>
+  <div class="container" style='margin-left:0px;padding-left:0px'>
+    <div class='col-sm-4'><a href='/vid/jLD8KdUmKNQ/UK_Context'><img class='gameImg' src='thumb/UK_Work Now_small.jpg'></a></div>
+    <div class='col-sm-4'><a href='/vid/oc8QsWZodIA/World_Context'><img class='gameImg' src='thumb/global_work_now_small.jpg'></a></div>
+    <div class='col-sm-4'><a href='/vid/cNVcKNdgTAI/Flexibility'><img class='gameImg' src='thumb/Flexibility_small.jpg'></a></div>
 
-  <div class='col-md-6 col-sm-12'><a href="/vid/jLD8KdUmKNQ/UK_Context" target="_self"><img src='uk.svg' style='width:30%'></a></div>
+    <div class='col-sm-4'><a href='/vid/ZnoGAVHbI8o/Unitisation'><img class='gameImg' src='thumb/Unitisation_small.jpg'></a></div>
+    <div class='col-sm-4'><a href='/vid/3pHeVlINalY/Trust'><img class='gameImg' src='thumb/Trust.jpg'></a></div>
+    <div class='col-sm-4'><a href='/vid/zpA9vdPY3K0/Workers Voice'><img class='gameImg' src='thumb/Workers_Voice.jpg'></a></div>
+
+    <div class='col-sm-4'><a href='/vid/vhSwr7vpdco/Competition'><img class='gameImg' src='thumb/Competition.jpg'></a></div>
+    <div class='col-sm-4'><a href='/vid/_cli5m2G1fY/Insecurity'><img class='gameImg' src='thumb/Insecurity.jpg'></a></div>
+    <div class='col-sm-4'><a href='/vid/1YIwYQoE4mA/Worker Solidarity'><img class='gameImg' src='thumb/Solidarity_small.jpg'></a></div>
+
+    <div class='col-sm-4'><a href='/vid/wcThyHNpXmU/Compete'><img class='gameImg' src='thumb/Compete.jpg'></a></div>
+    <div class='col-sm-4'><a href='/vid/FtjJYzEDkCw/Capitalise'><img class='gameImg' src='thumb/Capitalise.jpg'></a></div>
+    <div class='col-sm-4'><a href='/vid/z2Tj-s5XnvI/Cooperate'><img class='gameImg' src='thumb/Cooperate.jpg'></a></div>
+    <button class="btn btn-default done" style='margin-bottom:50px'>Finished</button>
+  </div>
+
+
+
+  <!-- <div class='col-md-6 col-sm-12'><a href="/vid/jLD8KdUmKNQ/UK_Context" target="_self"><img src='uk.svg' style='width:30%'></a></div>
   <div class='col-md-6 col-sm-12'><a href="/vid/oc8QsWZodIA/World_Context" target="_self"><img src='world.svg' style='width:80%'></a></div>
 
   <div class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12' style='margin-top:30px'>
@@ -44,10 +70,10 @@
   <area shape="circle" coords="112,107,66" href="/vid/wcThyHNpXmU/Compete" target="_self" alt="Compete" />
   <area shape="circle" coords="302,107,65" href="/vid/FtjJYzEDkCw/Capitalise" target="_self" alt="Capitalise" />
   <area shape="circle" coords="496,106,65" href="/vid/z2Tj-s5XnvI/Cooperate" target="_self" alt="Cooperate" />
-</map>
+</map> -->
 
 
-  <button class="btn btn-primary done" style='margin-bottom:50px'>Finished</button>
+
 
 
 </template>

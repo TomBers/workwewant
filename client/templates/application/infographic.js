@@ -1,3 +1,3 @@
-// Template.infographic.rendered = function () {
-//   imageMapResize('#Map3');
-// }
+Template.infographic.rendered = function () {
+  imageMapResize('#Map3');
+}

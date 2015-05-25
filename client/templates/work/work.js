@@ -1,13 +1,14 @@
-Session.setDefaultPersistent('points', 0);
-Session.setDefaultPersistent('user', '');
-Session.setDefaultPersistent('viewed', []);
+Template.work.rendered = function(){
+	Session.setDefaultPersistent('points', 0);
+	Session.setDefaultPersistent('user', '');
+	Session.setDefaultPersistent('viewed', []);
+}
 
 var started = false;
 Template.work.events({
-	'click button.user':function(e,t){
+	'click button.user, touchstart button.user':function(e,t){
     Session.setPersistent('user',t.find('#user').value);
     Router.go('nav');
-
 	}
 	// ,
   // 'click .vid':function(e,t){

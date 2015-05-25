@@ -35,6 +35,10 @@ display:none;
 }*/
 .img-responsive{
   width:100%;
+  height:auto;
+  /*max-width: 400px;*/
+
+
 }
 .centHead{
   /*font-family:Oswald;*/
@@ -43,7 +47,7 @@ display:none;
   /*text-align:center;*/
 }
 .centHead a{
-  font-size:3em;
+  font-size:2.5em;
   color:white;
 }
 
@@ -51,6 +55,8 @@ display:none;
   background:rgba(0,0,0,0.7);
   font-size:0.5em;
   width:95%;
+  max-width: 400px;
+
   /*left:15px;*/
 }
 
@@ -59,8 +65,8 @@ display:none;
       <div class='col-md-6'>
 
       <p>We face a radically different future of work, which is being shaped by
-        the web.  The days of steady 9-5 are over, as workers around the world come online.
-        Competiton for jobs is global, work is brought and sold on demand, and the price
+        the web.  The days of the steady 9-5 are over, as workers around the world come online.
+        Competiton for jobs is global, work is bought and sold on demand, and the price
         of labour is falling.
         How should we respond as a global workforce? How can we prepare for a different future of work?
         Are we going to compete, co-operate or exploit our fellow workers?
@@ -69,6 +75,7 @@ display:none;
       </div>
 
     </div>
+    <div class="container" style='margin-left:0px;padding-left:0px'>
         <div class='row' style='margin-bottom:30px'>
           <div class='col-lg-4 col-sm-6 col-xs-12  centHead'>
             <div class="thumb">
@@ -90,17 +97,17 @@ display:none;
             </div>
 
 
-          <div class='col-lg-4 col-sm-6 col-xs-12 centHead'><div class="thumb"><a href='/byron'>Outsourced Art<img class='img-responsive' src='outsourced_artwork.jpg'></a>
+          <div class='col-lg-4 col-sm-6 col-xs-12 centHead'><div class="thumb"><a href='/byron'>Outsourced art<img class='img-responsive' src='outsourced_artwork.jpg'></a>
             <span class="text thumbBigger"><a href='/byron'>We outsourced the production of an artwork about Canadian freelancer Tricia Schroeder to artist Byron Peters. Byron worked with Tricia to collaboratively produce this video piece.</a></span>
           </div></div>
-          <div class='col-lg-4 col-sm-6 col-xs-12  centHead'><div class="thumb"><a href='{{pathFor 'posts'}}'>Worker Stories<img class='img-responsive' src='workerstories.jpg'></a>
+          <div class='col-lg-4 col-sm-6 col-xs-12  centHead'><div class="thumb"><a href='{{pathFor 'posts'}}'>Worker stories<img class='img-responsive' src='workerstories.jpg'></a>
             <span class="text thumbBigger"><a href='{{pathFor 'posts'}}'>We ran a competition asking workers around the world about their experiences of work. Discover what they do, what they earn, what they want to do, and what they want to earn.</a></span>
           </div></div>
           <div class='col-lg-4 col-sm-6 col-xs-12 centHead'><div class="thumb"><a href="{{pathFor 'blog'}}" id="followus">Blog<img class='img-responsive' src='blog.jpg'></a>
             <span class="text thumbBigger"><a href="{{pathFor 'blog'}}" id="followus">Read our blog to see documentation of the project as it unfolded over the last year, from running our first competition on a freelance platform to installing our work at the Southbank Centre.</a></span>
           </div></div>
         </div>
-
+      </div>
 
 
 

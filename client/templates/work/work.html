@@ -37,38 +37,48 @@ input,button{
     width:100%;
     left:15px;
   }
+  .highlightTitle{
+    display: block;
+    font-size: 2em;
+    /*border: 1px solid red;*/
+    text-align: center;
+  }
 
   </style>
 
-    <h2>Here's how it works:</h2>
+    <h2 style='font-family:brush script MT;color:#eb7827;font-size:8em;-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;'>We pay peanuts!</h2>
 
-    <div style="display:inline-block;">
-    <div class="col-lg-4 col-sm-6 col-xs-12 item">
+    <div style="display:inline-block;margin-bottom:40px;">
+    <div class="col-md-2 col-sm-4 col-xs-12 item">
       <div class="thumb">
-        <img src='/eye.png' class='img-responsive'>
-        <span class="text thumbBigger">Watch : Select and watch videos about online work</span>
+        <img src='/eye.png' class='img-responsive'><span class='highlightTitle'>watch</span>
+        <span class="text thumbBigger">Select and watch videos about online work</span>
       </div>
     </div>
 
-    <div class="col-lg-4 col-sm-6 col-xs-12 item">
+    <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12 item">
       <div class="thumb">
-        <img src='/work.svg' class='img-responsive'>
-        <span class="text thumbBigger">Work: Tag the videos with descriptive keywords (tags)</span>
+        <img src='/work.svg' class='img-responsive'><span class='highlightTitle'>work</span>
+        <span class="text thumbBigger">Tag the videos with descriptive keywords (tags)</span>
       </div>
     </div>
 
-    <div class="col-lg-4 col-sm-6 col-xs-12 item">
+    <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12 item">
       <div class="thumb">
-        <img src='/earn.png' class='img-responsive'>
-        <span class="text thumbBigger">Earn: Get paid in peanuts</span>
+        <img src='/earn.png' class='img-responsive'><span class='highlightTitle'>earn</span>
+        <span class="text thumbBigger">Get paid in peanuts</span>
       </div>
+    </div>
+    <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12 item">
+
     </div>
 
 </div>
-  <div class="col-sm-12" style="display:block;margin-top:20px;font-size:2.2em;margin-bottom:50px;margin-top:20px">
-    Enter Username :
-    <input type="text" name="user" id="user">
-    <button class="btn btn-primary user">Get to Work</button>
+  <div class="col-sm-12" style="display:block;font-size:2.2em;margin-bottom:50px;margin-top:20px">
+
+    <input type="text" name="user" placeholder="Enter name" id="user">
+    <button class="btn btn-link user" style="color:#eb7827">Get to Work</button>
   </div>
 
 
